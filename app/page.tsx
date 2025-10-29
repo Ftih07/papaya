@@ -24,7 +24,7 @@ export default function BirthdayApp() {
 
   const handleStart = () => setStage("text-animation");
 
-  const toggleCandle = (index) => {
+  const toggleCandle = (index: number) => {
     setCandleStates((prev) => {
       const newStates = [...prev];
       newStates[index] = true;
